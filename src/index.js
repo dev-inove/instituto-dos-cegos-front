@@ -10,3 +10,5 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById("root")
 );
+
+// componentização, parametrização, (estado e imutabilidade)

@@ -1,11 +1,18 @@
 import React from "react";
 import { H1Style as S } from "./style";
-export default function H1() {
+export default function H1({ aparece, nome }) {
   return (
     <>
-      <S.Container>
-        <h1>Teste</h1>
-      </S.Container>
+      {aparece && (
+        <>
+          <S.Container>
+            <h1>Célula de dev {nome || "Desenvolvedor"}</h1>
+          </S.Container>
+          <S.Body>
+            <h1>Célula de dev {nome || "Desenvolvedor"}</h1>
+          </S.Body>
+        </>
+      )}
     </>
   );
 }
