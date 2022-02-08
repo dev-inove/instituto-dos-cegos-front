@@ -8,6 +8,13 @@ const Global = createGlobalStyle`
     
     --lightGreen: rgba(64, 217, 184, 1);
     --black: rgba(0,0,0,1.0);
+
+    --primaryColor: #EF6D1F;
+    --secondColor: #FFCB77;
+    --textColor500: #323232;
+    --textColor300: #666666;
+    --textColor200: ##999999;
+    --textColor100: #CCCCCC;
   }
   * {
     margin: 0;
