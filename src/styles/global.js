@@ -10,6 +10,7 @@ const Global = createGlobalStyle`
     --black: rgba(0,0,0,1.0);
 
     --primaryColor: #EF6D1F;
+    --primaryColorHover: #D6631C;
     --secondColor: #FFCB77;
     --textColor500: #323232;
     --textColor300: #666666;
@@ -30,6 +31,7 @@ const Global = createGlobalStyle`
     }
   }
   body {
+    height: 100vh;
     background-color: var(--background);
     -webkit-font-smoothing: antialiased;
   }
