@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import Banner from '../../assets/images/banner_login.svg'
-import Logo from '../../assets/images/logo.svg'
+import Banner from '../../assets/images/banner_login.svg';
+import Logo from '../../assets/images/logo.svg';
 import { IoMailOutline } from "react-icons/io5";
 import * as CheckboxPrimitive from '@radix-ui/react-checkbox';
 import { CheckIcon } from '@radix-ui/react-icons';
