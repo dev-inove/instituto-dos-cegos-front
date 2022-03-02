@@ -1,7 +1,12 @@
 import styled from 'styled-components';
 
-import { NavLink } from 'react-router-dom';
-import {FiHome, FiUsers, FiCalendar, FiUser, FiLogOut} from 'react-icons/fi';
+import { Link } from 'react-router-dom';
+import {FiLogOut} from 'react-icons/fi';
+
+interface Props {
+  key: string,
+  active: boolean,
+}
 
 export const Container = styled.div`
   height: 100vh;
@@ -34,11 +39,27 @@ export const ContainerLogo = styled.div`
   align-items: center;
 `;
 
-export const NavLinkItens = styled(NavLink)`
+export const NavLinkItens = styled.div<Props>`
   display: flex;
   height: 50px;
-  width: 85%;
-  margin-left: 15px;
+  min-width: 90%;
+  margin-left: 10px;
+  margin-right: 20px;
+  border-radius: 5px;
+  align-items: center;
+  transition: all 0.25s ease-in-out;
+  background-color: ${props => props.active ? "#F4F5F5" : ""};
+
+  &:hover {
+    background-color: var(--navigationHoverSideBar);
+  }
+`;
+
+export const NavLink = styled(Link)`
+  display: flex;
+  height: 50px;
+  min-width: 90%;
+  margin-left: 10px;
   margin-right: 20px;
   border-radius: 5px;
   justify-content: row;
@@ -46,28 +67,9 @@ export const NavLinkItens = styled(NavLink)`
   flex-direction: row;
   text-decoration: none;
   margin-bottom: 30px;
-
-  &:hover {
-    background-color: var(--navigationHoverSideBar);
-  }
 `;
 
-export const IconFiHome = styled(FiHome)`
-  color: var(--textColor500);
-  margin-left: 15px;
-`;
-
-export const IconFiUsers = styled(FiUsers)`
-  color: var(--textColor500);
-  margin-left: 15px;
-`;
-
-export const IconFiCalendar = styled(FiCalendar)`
-  color: var(--textColor500);
-  margin-left: 15px;
-`;
-
-export const IconFiUser = styled(FiUser)`
+export const IconLink = styled.div`
   color: var(--textColor500);
   margin-left: 15px;
 `;

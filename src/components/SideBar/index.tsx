@@ -1,9 +1,32 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import Logo from '../../assets/images/logo.svg';
+import SidebarItems from "./SidebarItems";
 
 import * as S from './styles';
 
-const SideBar = () => {
+const SideBar = (props: any) => {
+  const location = props.history.location;
+  const lastActiveIndexString = localStorage.getItem("lastActiveIndex");
+  const lastActiveIndex = Number(lastActiveIndexString);
+  const [activeIndex, setActiveIndex] = useState(lastActiveIndex || undefined);
+
+  function changeActiveIndex(newIndex: any) {
+    localStorage.setItem("lastActiveIndex", newIndex);
+    setActiveIndex(newIndex);
+  }
+
+  function getPath(path: string) {
+    if (path.charAt(0) !== "/") {
+        return  "/" + path;
+    }
+    return path;
+  }
+
+  useEffect(()=> {
+      const activeItem = SidebarItems.findIndex(item => getPath(item.route) === getPath(location.pathname))
+      changeActiveIndex(activeItem);
+  }, [location]);
+
   return (
     <S.Container>
       <S.ContainerAside>
@@ -11,29 +34,25 @@ const SideBar = () => {
           <S.ImgLogo src={Logo} alt="Logo"/>
         </S.ContainerLogo>
         <S.ContainerHeader>
-          <S.NavLinkItens to="/home" >
-            <S.IconFiHome size={20}/>
-            <S.TextIcons>Página inicial</S.TextIcons>
-          </S.NavLinkItens>
-          <S.NavLinkItens to="/assisted" >
-            <S.IconFiUsers size={20}/>
-            <S.TextIcons>Assistidos</S.TextIcons>
-          </S.NavLinkItens>
-          <S.NavLinkItens exact to="/events">
-            <S.IconFiCalendar size={20}/>
-            <S.TextIcons>Eventos</S.TextIcons>
-          </S.NavLinkItens>
-          <S.NavLinkItens exact to="/profile" >
-            <S.IconFiUser size={20}/>
-            <S.TextIcons>Meu perfil</S.TextIcons>
-          </S.NavLinkItens>
+          {
+            SidebarItems.map((item, index)=> {
+              return (
+                <S.NavLink to={item.route}>
+                  <S.NavLinkItens key={item.name} active={index === activeIndex}>
+                    <S.IconLink>{item.iconName}</S.IconLink>
+                    <S.TextIcons>{item.name}</S.TextIcons>
+                  </S.NavLinkItens>
+                </S.NavLink>
+              );
+            })
+          }
         </S.ContainerHeader>
         <S.ContainerBottom>
           <S.Line />
-          <S.NavLinkItens exact to="/" >
+          <S.NavLink to="/" >
             <S.IconFiLogOut size={20}/>
             <S.TextIcons>Sair</S.TextIcons>
-          </S.NavLinkItens>
+          </S.NavLink>
         </S.ContainerBottom>
       </S.ContainerAside>
     </S.Container>
