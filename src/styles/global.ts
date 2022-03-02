@@ -16,6 +16,7 @@ const Global = createGlobalStyle`
     --textColor300: #666666;
     --textColor200: ##999999;
     --textColor100: #CCCCCC;
+    --navigationHoverSideBar: #F4F5F5;
   }
   * {
     margin: 0;
@@ -32,7 +33,7 @@ const Global = createGlobalStyle`
   }
   body {
     height: 100vh;
-    background-color: var(--background);
+    background-color: var(--backgroundGray);
     -webkit-font-smoothing: antialiased;
   }
   body, input, text-area, button {

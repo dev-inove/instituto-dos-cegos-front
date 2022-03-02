@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import Banner from '../../assets/images/banner_login.svg';
 import Logo from '../../assets/images/logo.svg';
-import { IoMailOutline } from "react-icons/io5";
 import * as CheckboxPrimitive from '@radix-ui/react-checkbox';
 import { CheckIcon } from '@radix-ui/react-icons';
 
@@ -25,7 +24,7 @@ function Login() {
 
           <S.FormInput>
             <S.LabelInput>Digite sua senha</S.LabelInput>
-            <S.Input type="password" placeholder='Ex: 123456' icon={IoMailOutline}/>
+            <S.Input type="password" placeholder='Ex: 123456'/>
           </S.FormInput>
         </form>
         
@@ -42,7 +41,7 @@ function Login() {
             <S.LabelRemember>Lembrar de mim</S.LabelRemember>
           </div>
           <div style={{ margin: 2}}>
-            <S.ForgotPassword href="#" onclick={() => {}}>Esqueceu sua senha?</S.ForgotPassword>
+            <S.ForgotPassword href="#" >Esqueceu sua senha?</S.ForgotPassword>
           </div>
         </S.RecoverPassword>
         <Link to="/home" >
