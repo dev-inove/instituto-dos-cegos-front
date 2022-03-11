@@ -2,7 +2,7 @@
 <p align="center">Projeto <strong>IDC</strong> desenvolvido em ReactJS pela equipe do Inove</p>
 <p align="center">
   <a aria-label="Inove" href="https://github.com/dev-inove">
-    <img src="https://img.shields.io/badge/dev-inove-22.0-informational?logo=medium"></img>
+    <img src="https://img.shields.io/badge/dev-inove-21.0-informational?logo=medium"></img>
   </a>
   <a aria-label="ReactJS" href="">
     <img src="https://img.shields.io/badge/ReactJS-17.0.2-informational"></img>
@@ -21,7 +21,7 @@
 
 ## 🚀 Execução
 
-_ps: Se precisar de ajuda para fazer um clone, esse [tutorial aqui](https://help.github.com/pt/github/creating-cloning-and-archiving-repositories/cloning-a-repository) vai te ajudar 💖_
+_ps: Se precisar de ajuda para fazer um clone, esse [tutorial aqui](https://help.github.com/pt/github/creating-cloning-and-archiving-repositories/cloning-a-repository) vai te ajudar.
 
 1. Abra o terminal do seu computador. Se estiver no Windows, pode ser o Prompt de Comando ou PowerShell. Caso use o WSL no Windows, use o Windows Terminal, usando o Ubuntu ou qualquer distribuição suportada pelo WSL.
 2. Altere o diretório de trabalho atual para o local em que deseja ter o código do módulo salvo no seu computador.
@@ -32,7 +32,7 @@ _ps: Se precisar de ajuda para fazer um clone, esse [tutorial aqui](https://help
 
 ## 💻 Site
 
-# ⚠️ Em desenvolvimento
+## ⚠️ Em desenvolvimento
 
 ## 🤔 Como contribuir
 
