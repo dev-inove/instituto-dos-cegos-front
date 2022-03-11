@@ -2,7 +2,7 @@
 <p align="center">Projeto <strong>IDC</strong> desenvolvido em ReactJS pela equipe do Inove</p>
 <p align="center">
   <a aria-label="Inove" href="https://github.com/dev-inove">
-    <img src="https://img.shields.io/badge/dev-inove-21.0-informational?logo=medium"></img>
+    <img src="https://img.shields.io/badge/Inove-2022-informational"></img>
   </a>
   <a aria-label="ReactJS" href="">
     <img src="https://img.shields.io/badge/ReactJS-17.0.2-informational"></img>
