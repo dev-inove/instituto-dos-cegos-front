@@ -27,7 +27,7 @@ _ps: Se precisar de ajuda para fazer um clone, esse [tutorial aqui](https://help
 2. Altere o diretório de trabalho atual para o local em que deseja ter o código do módulo salvo no seu computador.
 3. Faça um clone desse repositório rodando: <br> `git clone https://github.com/dev-inove/instituto-dos-cegos-front.git`;
 4. Entre na pasta rodando pelo terminal: `cd instituto-dos-cegos-front`;
-6. Rode `npm init` ou `yarn` caso utilize para instalar as dependências do projeto;
+6. Rode `npm install` ou `yarn` caso utilize para instalar as dependências do projeto;
 7. Rode `npx start` ou `yarn start` caso utilize para iniciar o site.
 
 ## 💻 Site
