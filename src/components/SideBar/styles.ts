@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import {FiLogOut} from 'react-icons/fi';
 
 interface Props {
-  key: string,
   active: boolean,
 }
 

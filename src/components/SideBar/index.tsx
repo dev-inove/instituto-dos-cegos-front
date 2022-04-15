@@ -37,8 +37,8 @@ const SideBar = (props: any) => {
           {
             SidebarItems.map((item, index)=> {
               return (
-                <S.NavLink to={item.route}>
-                  <S.NavLinkItens key={item.name} active={index === activeIndex}>
+                <S.NavLink to={item.route} key={item.id}>
+                  <S.NavLinkItens active={index === activeIndex}>
                     <S.IconLink>{item.iconName}</S.IconLink>
                     <S.TextIcons>{item.name}</S.TextIcons>
                   </S.NavLinkItens>
