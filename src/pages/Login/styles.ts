@@ -10,7 +10,7 @@ export const Container = styled.div`
   @media(max-width: 950px) {
     flex-direction: column;
   }
-  
+
 `;
 
 export const ContainerInfo = styled.div`
@@ -47,7 +47,7 @@ export const ContainerInfo = styled.div`
   @media(max-width: 340px) {
     margin-top: 85%;
   }
-  
+
 `;
 
 export const ContainerLogo = styled.div`
@@ -66,7 +66,7 @@ export const ContainerLogo = styled.div`
   @media(max-width: 560px) {
     width: 100%;
   }
-  
+
 `;
 
 export const ImgBanner = styled.img`
@@ -87,6 +87,7 @@ export const ImgBanner = styled.img`
 
 export const Welcome = styled.div`
   width: 400px;
+  margin-top: 30px;
 
   @media(max-width: 500px) {
     width: 70%;
@@ -122,6 +123,11 @@ export const FormInput = styled.div`
   text-align: left;
 `;
 
+export const ContainerTextInput = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
 export const LabelInput = styled.label`
   display: block;
   margin-bottom: 5px;
@@ -131,9 +137,18 @@ export const LabelInput = styled.label`
   line-height: 24px;
 `;
 
+export const LabelInputAlert = styled.label`
+  display: block;
+  margin-bottom: 5px;
+  color: var(--primaryColor);
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+`;
+
 export const Input = styled.input`
   width: 400px;
-  background-color: #F7F7F7;
+  background-color: var(--backgroundGray);
   margin-bottom: 20px;
   padding: 10px;
   font-size: 16px;
