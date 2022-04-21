@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Sidebar from '../SideBar/index';
+import Sidebar from '~/components/SideBar/index';
 
 function Layout(props: any) {
   const { history, children } = props;

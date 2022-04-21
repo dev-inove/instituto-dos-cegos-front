@@ -5,8 +5,9 @@ import { CheckIcon } from '@radix-ui/react-icons';
 import { Formik, Form } from 'formik';
 import * as Yup from 'yup';
 
-import Logo from '../../assets/images/logo.svg';
-import Banner from '../../assets/images/banner_login.svg';
+import Logo from '~/assets/images/logo.svg';
+import Banner from '~/assets/images/banner_login.svg';
+
 import * as S from './styles';
 
 interface InfoLogin {
