@@ -1,12 +1,12 @@
 import React from 'react';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
 
-import Login from '../pages/Login/index';
-import Home from '../pages/Home/index';
-import Assisted from '../pages/Assisteds/index';
-import Events from '../pages/Events/index';
-import Profile from '../pages/Profile/index';
-import Layout from '../components/Layout/index';
+import Login from '~/pages/Login/index';
+import Home from '~/pages/Home/index';
+import Assisted from '~/pages/Assisteds/index';
+import Events from '~/pages/Events/index';
+import Profile from '~/pages/Profile/index';
+import Layout from '~/components/Layout/index';
 
 const routes = () => (
   <BrowserRouter>
