@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-
 import { IoMailOutline } from "react-icons/io5";
 import * as CheckboxPrimitive from '@radix-ui/react-checkbox';
 
