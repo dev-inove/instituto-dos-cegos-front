@@ -4,6 +4,7 @@ const Global = createGlobalStyle`
 :root {
     --background: rgba(255,255,255,1.0);
     --backgroundGray: rgba(242, 242, 242, 1);
+    --backgroundGrayContent: #F7F7F7;
     --textGray: rgba(96, 96, 96, 1);
 
     --lightGreen: rgba(64, 217, 184, 1);
