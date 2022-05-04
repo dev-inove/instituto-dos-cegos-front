@@ -1,32 +1,9 @@
 import styled from 'styled-components';
 import * as Select from '@radix-ui/react-select';
-
-export const Container = styled.div`
-`;
-
-export const Welcome = styled.h1`
-  margin-top: 20px;
-  font-size: 30px;
-  font-weight: 600;
-  line-height: 47px;
-  color: var(--textColor500);
-`;
-
-export const WelcomeParagraph = styled.p`
-  margin-top: 5px;
-  margin-bottom: 40px;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 31px;
-  color: var(--textColor300);
-`;
-
-export const FormLogin = styled.div`
-  width: 30rem;
-`;
+import { CheckIcon } from '@radix-ui/react-icons';
 
 export const StyledTrigger = styled(Select.SelectTrigger)`
-  width: 12rem;
+  width: 30rem;
   background-color: var(--background);
   color: var(--textColor300);
   display: inline-flex;
@@ -36,7 +13,7 @@ export const StyledTrigger = styled(Select.SelectTrigger)`
   padding: 10px;
   font-size: 16px;
   outline: none;
-  border: none;
+  border: 1px solid var(--borderInput);
   border-radius: 5px;
   transition: 0.3s;
 `;
@@ -68,18 +45,27 @@ export const StyledItem = styled(Select.Item)`
   }
 `;
 
-export const ContentRowLabels = styled.div`
+export const StyledIconCheck = styled(CheckIcon)`
+  height: 20px;
+  width: 20px;
+  margin-top: 3px;
+`;
+
+export const FormInput = styled.div`
+  text-align: left;
+`;
+
+export const ContainerTextInput = styled.div`
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 `;
 
-export const ContentButtons = styled.div`
-  display: flex;
-  justify-content: end;
+export const LabelInput = styled.label`
+  display: block;
+  margin-bottom: 5px;
+  color: var(--textColor500);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
 `;
-
-
-
-
 

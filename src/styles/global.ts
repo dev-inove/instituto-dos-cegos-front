@@ -18,6 +18,7 @@ const Global = createGlobalStyle`
     --textColor200: ##999999;
     --textColor100: #CCCCCC;
     --navigationHoverSideBar: #F4F5F5;
+    --borderInput: #E9E7E7;
   }
   * {
     margin: 0;
