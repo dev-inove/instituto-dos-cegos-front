@@ -7,11 +7,12 @@ interface PropsButtonPrimary {
   type: 'button' | 'submit' | 'reset' | undefined;
   name: string;
   iconName: IconType | null;
+  onClick?: () => void;
 }
 
-function ButtonPrimary({ type, name, iconName }: PropsButtonPrimary) {
+function ButtonPrimary({ type, name, iconName, onClick }: PropsButtonPrimary) {
   return (
-    <S.ButtonContainer type={type}>
+    <S.ButtonContainer type={type} onClick={onClick}>
       <S.ButtonContent>
         {iconName !== null
           ? React.createElement(iconName, {
