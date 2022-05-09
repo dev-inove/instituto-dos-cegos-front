@@ -9,7 +9,14 @@ function Layout(props: any) {
     <div>
       <div style={{ display: 'flex' }}>
         <Sidebar history={history} />
-        <div style={{ marginLeft: '18rem' }}>{children}</div>
+        <div
+          style={{
+            marginLeft: '18rem',
+            backgroundColor: ' #ffffff',
+          }}
+        >
+          {children}
+        </div>
       </div>
     </div>
   );
