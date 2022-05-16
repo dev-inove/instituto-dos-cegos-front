@@ -1,7 +1,7 @@
 import React from 'react';
 
 import * as S from './styles';
-import HomeCards from './Cards/HomeCards';
+import HomeCards from '~/components/Cards/HomeCards';
 
 function Home() {
   return (

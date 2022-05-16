@@ -14,7 +14,7 @@ function Infocards() {
         <S.ContainerInfoCardImage /* Logo do Card Assistidos */>
           <S.InforCardImage
             src={assistaintsLogo}
-            alt='uma mulher fazendo companhia para idosos'
+            alt='Uma mulher fazendo companhia para idosos'
           />
         </S.ContainerInfoCardImage>
         <S.ContainerInfoCardText /* Texto do Card Assistidos */>
@@ -28,7 +28,7 @@ function Infocards() {
         <S.ContainerInfoCardImage /* Logo do Card Atividades */>
           <S.InforCardImage
             src={activitiesLogo}
-            alt='dois idosos fazendo alongamentos'
+            alt='Dois idosos fazendo alongamentos'
           />
         </S.ContainerInfoCardImage>
         <S.ContainerInfoCardText /* Texto do Card Atividades */>

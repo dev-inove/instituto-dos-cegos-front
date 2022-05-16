@@ -82,7 +82,7 @@ export const ContainerCardsInfo = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  @media (max-width: 1315px) {
+  @media (max-width: 1336px) {
     flex-direction: column;
   }
 `;
@@ -97,7 +97,7 @@ export const CounterStyle = styled.span`
 
   margin-right: 15px;
 `;
-// --------- container do card de assistidos ----------------------
+
 export const InfoCard = styled.div`
   display: flex;
   border-radius: 10px;
@@ -106,7 +106,7 @@ export const InfoCard = styled.div`
   width: 49%;
   min-width: 484px;
   min-height: 178px;
-  @media (max-width: 1315px) {
+  @media (max-width: 1336px) {
     width: 100%;
     margin-bottom: 25px;
   }
