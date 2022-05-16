@@ -4,7 +4,6 @@ import Sidebar from '~/components/SideBar/index';
 
 function Layout(props: any) {
   const { history, children } = props;
-
   return (
     <div>
       <div style={{ display: 'flex'}}>
