@@ -152,7 +152,7 @@ export const Input = styled.input`
   padding: 10px;
   font-size: 16px;
   outline: none;
-  border: none;
+  border: 1px solid var(--borderInput);
   border-radius: 5px;
   transition: 0.3s;
   ::-webkit-input-placeholder {
