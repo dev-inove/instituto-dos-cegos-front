@@ -17,7 +17,6 @@ export const ContainerCardsInfo = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
   @media (max-width: 1336px) {
     flex-direction: column;
   }
@@ -25,6 +24,7 @@ export const ContainerCardsInfo = styled.div`
 
 export const CounterStyle = styled.span`
   font-family: 'Rubik', sans-serif;
+
   font-style: normal;
   font-weight: 700;
   font-size: 106.32px;
@@ -78,6 +78,9 @@ export const InforCardText = styled.p`
 `;
 
 export const InforCardImage = styled.img`
-  width: 203px;
-  height: 135.33px;
+  max-width: 100%;
+  min-width: 5rem;
+  height: 100%;
+  min-height: 50px;
+  padding: 1em 0;
 `;
