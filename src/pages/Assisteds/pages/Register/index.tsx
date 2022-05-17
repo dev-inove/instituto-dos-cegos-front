@@ -69,11 +69,14 @@ function Register() {
   }
 
   return (
-    <div>
-      <S.Welcome>Cadastrar assistido</S.Welcome>
-      <S.WelcomeParagraph>
-        Preencha todos os campos abaixo para cadastrar uma pessoa.
-      </S.WelcomeParagraph>
+    <S.Container>
+      <S.Welcome>Detalhes do Assistido</S.Welcome>
+      <S.MenuButton>
+        <S.ButtonParagraph>Dados Pessoais</S.ButtonParagraph>
+        <S.ButtonParagraph>Endereço</S.ButtonParagraph>
+        <S.ButtonParagraph>Familiares</S.ButtonParagraph>
+        <S.ButtonParagraph>Imóveis</S.ButtonParagraph>
+      </S.MenuButton>
 
       <S.FormLogin>
         <Formik
@@ -227,7 +230,7 @@ function Register() {
           )}
         </Formik>
       </S.FormLogin>
-    </div>
+    </S.Container>
   );
 }
 
