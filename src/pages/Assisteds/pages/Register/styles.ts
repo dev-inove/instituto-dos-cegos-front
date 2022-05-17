@@ -10,7 +10,7 @@ export const Welcome = styled.h1`
   margin-top: 20px;
   font-size: 30px;
   font-weight: 600;
-  line-height: 47px;
+  line-height: 48px;
   color: var(--textColor500);
 `;
 
