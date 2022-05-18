@@ -12,7 +12,6 @@
   </a>
 </p>
 
-
 <p align="center">
   <a href="#-execução">Execução</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-site">Site</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -27,8 +26,8 @@ _ps: Se precisar de ajuda para fazer um clone, esse [tutorial aqui](https://help
 2. Altere o diretório de trabalho atual para o local em que deseja ter o código do módulo salvo no seu computador.
 3. Faça um clone desse repositório rodando: <br> `git clone https://github.com/dev-inove/instituto-dos-cegos-front.git`;
 4. Entre na pasta rodando pelo terminal: `cd instituto-dos-cegos-front`;
-6. Rode `npm install` ou `yarn` caso utilize para instalar as dependências do projeto;
-7. Rode `npx start` ou `yarn start` caso utilize para iniciar o site.
+5. Rode `npm install` ou `yarn` caso utilize para instalar as dependências do projeto;
+6. Rode `npx start` ou `yarn start` caso utilize para iniciar o site.
 
 ## 💻 Site
 
@@ -39,15 +38,17 @@ _ps: Se precisar de ajuda para fazer um clone, esse [tutorial aqui](https://help
 Se quiser contribuir para esse repositório aqui, seja corrigindo algum problema, adicionando comentários ou melhorando a documentação, você pode seguir esse tutorial abaixo:
 
 - Faça [um fork](https://help.github.com/pt/github/getting-started-with-github/fork-a-repo) desse repositório;
-- Entre no seu perfil no GitHub e faça um clone do repositório que você fez um *fork*;
-- Crie uma *branch* com a sua alteração: `git checkout -b minha-alteracao`;
+- Entre no seu perfil no GitHub e faça um clone do repositório que você fez um _fork_;
+- Crie uma _branch_ com a sua alteração: `git checkout -b minha-alteracao`;
 - Faça as alterações necessárias no código ou na documentação;
-- Faça *commit* das suas alterações: `git commit -m 'feat: Minha nova feature'`;
-- Faça *push* para a sua *branch*: `git push origin minha-alteracao`;
-- Agora é só abrir a sua *pull request* no repositório que você fez o *fork*;
+- Faça _commit_ das suas alterações: `git commit -m 'feat: Minha nova feature'`;
+- Faça _push_ para a sua _branch_: `git push origin minha-alteracao`;
+- Agora é só abrir a sua _pull request_ no repositório que você fez o _fork_;
 
-Depois que o *merge* da sua *pull request* for feito, você pode deletar a sua *branch*.
-
+Depois que o _merge_ da sua _pull request_ for feito, você pode deletar a sua _branch_.
 
 ---
+
 Feito com ♥ by Inove :wave:
+
+Testando commit com usuário local : by Juan
