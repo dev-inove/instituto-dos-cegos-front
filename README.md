@@ -50,5 +50,3 @@ Depois que o _merge_ da sua _pull request_ for feito, você pode deletar a sua _
 ---
 
 Feito com ♥ by Inove :wave:
-
-Testando commit com usuário local : by Juan
