@@ -17,7 +17,7 @@ export const ContainerCardsInfo = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  @media (max-width: 1336px) {
+  @media(max-width: 1366px){
     flex-direction: column;
   }
 `;
@@ -32,6 +32,8 @@ export const CounterStyle = styled.span`
   color: #ef6d1f;
 
   margin-right: 15px;
+
+
 `;
 
 export const InfoCard = styled.div`
@@ -41,16 +43,22 @@ export const InfoCard = styled.div`
   height: 180px;
   width: 49%;
   min-width: 484px;
-  min-height: 178px;
-  @media (max-width: 1336px) {
-    width: 100%;
-    margin-bottom: 25px;
-  }
+  min-height: 96px;
+
   background-color: #ffffff;
 
   justify-content: space-evenly;
   align-items: center;
   margin-bottom: 50px;
+
+  @media(max-width: 1366px){
+    height: 140px;
+    width: auto;
+  }
+  @media(max-width: 1080px){
+    height: 96px;
+    padding: 4rem 0;
+  }
 `;
 
 export const ContainerInfoCardImage = styled.div`
@@ -82,5 +90,12 @@ export const InforCardImage = styled.img`
   min-width: 5rem;
   height: 100%;
   min-height: 50px;
-  padding: 1em 0;
+
+  @media(max-width: 1366px){
+    width: 90%;
+  }
+
+  @media(max-width: 1080px){
+    width: 75%;
+  }
 `;

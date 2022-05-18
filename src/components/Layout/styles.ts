@@ -8,5 +8,5 @@ export const ContainerContent = styled.div`
 `;
 
 export const ContentChildren = styled.div`
-  margin-left: 18rem;
+  margin-left: 16rem;
 `;
