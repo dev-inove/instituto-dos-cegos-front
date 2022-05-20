@@ -5,7 +5,6 @@ import * as S from './styles';
 
 function Layout(props: any) {
   const { history, children } = props;
-
   return (
     <div>
       <S.ContainerContent>

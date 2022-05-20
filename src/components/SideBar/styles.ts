@@ -1,16 +1,17 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import {FiLogOut} from 'react-icons/fi';
+import { FiLogOut } from 'react-icons/fi';
 
 interface Props {
-  active: boolean,
+  active: boolean;
 }
 
 export const Container = styled.div`
   height: 100vh;
   position: fixed;
   display: flex;
-  box-shadow: inset 0 0 1em gold, 0 0 1em rgba(0, 0, 1, 0.123);
+  box-shadow: 0 0 1em rgba(0, 0, 1, 0.123);
+  overflow-y: auto;
 `;
 
 export const ContainerAside = styled.aside`
@@ -27,7 +28,8 @@ export const ContainerHeader = styled.header`
 `;
 
 export const ImgLogo = styled.img`
-  width: 12rem;
+  width: 171px;
+  height: 63px;
 `;
 
 export const ContainerLogo = styled.div`
@@ -46,7 +48,7 @@ export const NavLinkItens = styled.div<Props>`
   border-radius: 5px;
   align-items: center;
   transition: all 0.25s ease-in-out;
-  background-color: ${props => props.active ? "#F4F5F5" : ""};
+  background-color: ${(props) => (props.active ? '#F4F5F5' : '')};
 
   &:hover {
     background-color: var(--navigationHoverSideBar);
@@ -96,11 +98,3 @@ export const ContainerBottom = styled.footer`
   height: 100%;
   justify-content: flex-end;
 `;
-
-
-
-
-
-
-
-
