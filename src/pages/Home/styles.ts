@@ -7,6 +7,7 @@ export const HomeContainer = styled.div`
   overflow-y: auto;
   overflow-x: auto;
   width: calc(100vw - 16rem);
+  min-width: 582.55px;
   padding: 50px 50px 50px 50px;
 `;
 

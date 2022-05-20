@@ -1,24 +1,47 @@
 import styled from 'styled-components';
 
 export const InfoHeaderText = styled.h1`
-  margin-top: 50px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
-  font-size: 31.5px;
+  font-size: 2.9rem;
   line-height: 47px;
-
+  margin-bottom: 25px;
   color: #323232;
+
+  min-width: 165px;
+
+  @media (max-width: 1366px) {
+    font-size: 2.4rem;
+  }
+
+  @media (max-width: 1080px) {
+    font-size: 1.9rem;
+  }
+  @media (max-width: 846px) {
+    font-size: 1.8rem;
+  }
+  @media (max-width: 720px) {
+    font-size: 1.75rem;
+  }
 `;
 
 // --------- container dos cards de informações ----------------------
 export const ContainerCardsInfo = styled.div`
-  margin-top: 25px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  @media(max-width: 1366px){
+  margin-bottom: 50px;
+
+  @media (max-width: 1366px) {
+    align-content: space-between;
     flex-direction: column;
+    height: 19rem;
+  }
+  @media (max-width: 1080px) {
+    align-content: space-between;
+    flex-direction: column;
+    height: 18rem;
   }
 `;
 
@@ -27,20 +50,32 @@ export const CounterStyle = styled.span`
 
   font-style: normal;
   font-weight: 700;
-  font-size: 106.32px;
+  font-size: 6.75rem;
   line-height: 126px;
   color: #ef6d1f;
 
   margin-right: 15px;
 
+  @media (max-width: 1366px) {
+    font-size: 6.5rem;
+  }
 
+  @media (max-width: 1080px) {
+    font-size: 6rem;
+  }
+  @media (max-width: 846px) {
+    font-size: 5.8rem;
+  }
+  @media (max-width: 720px) {
+    font-size: 5.9rem;
+  }
 `;
 
 export const InfoCard = styled.div`
   display: flex;
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.06);
-  height: 180px;
+  height: 10rem;
   width: 49%;
   min-width: 484px;
   min-height: 96px;
@@ -49,14 +84,13 @@ export const InfoCard = styled.div`
 
   justify-content: space-evenly;
   align-items: center;
-  margin-bottom: 50px;
 
-  @media(max-width: 1366px){
-    height: 140px;
+  @media (max-width: 1366px) {
+    height: 9rem;
     width: auto;
   }
-  @media(max-width: 1080px){
-    height: 96px;
+  @media (max-width: 1080px) {
+    height: 6rem;
     padding: 4rem 0;
   }
 `;
@@ -76,13 +110,26 @@ export const InforCardText = styled.p`
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
-  font-size: 21px;
+  width: 135px;
+  height: 64px;
   line-height: 32px;
+  font-size: 1.325rem;
 
   color: #666666;
 
-  width: 135px;
-  height: 64px;
+  @media (max-width: 1366px) {
+    font-size: 1.5rem;
+    width: 155px;
+  }
+
+  @media (max-width: 1080px) {
+    font-size: 1.3rem;
+    width: 125px;
+  }
+  @media (max-width: 720px) {
+    font-size: 1.2rem;
+    width: 110px;
+  }
 `;
 
 export const InforCardImage = styled.img`
@@ -91,11 +138,11 @@ export const InforCardImage = styled.img`
   height: 100%;
   min-height: 50px;
 
-  @media(max-width: 1366px){
+  @media (max-width: 1366px) {
     width: 90%;
   }
 
-  @media(max-width: 1080px){
+  @media (max-width: 1080px) {
     width: 75%;
   }
 `;
