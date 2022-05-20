@@ -1,10 +1,13 @@
 import React from 'react';
 
+import * as S from './styles';
+import HomeCards from '~/components/HomeCards';
+
 function Home() {
   return (
-    <div>
-      <h1>Tela home</h1>
-    </div>
+    <S.HomeContainer>
+      <HomeCards />
+    </S.HomeContainer>
   );
 }
 
